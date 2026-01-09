@@ -24,3 +24,52 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Fix for dropdown text visibility */
+select {
+  color: #111827; /* gray-900 */
+  background-color: white;
+}
+
+select option {
+  color: #111827; /* gray-900 */
+  background-color: white;
+}
+
+/* For inputs as well */
+input[type="text"],
+input[type="email"],
+textarea {
+  color: #111827;
+}
+/* Add these styles to your app/globals.css file */
+
+/* Ensure all dropdowns have black text on white background */
+select {
+  color: #111827 !important; /* gray-900 */
+  background-color: white !important;
+}
+
+select option {
+  color: #111827 !important; /* gray-900 */
+  background-color: white !important;
+}
+
+/* Ensure placeholder text is visible light grey */
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af !important; /* gray-400 */
+  opacity: 1;
+}
+
+/* Ensure input text is dark */
+input[type="text"],
+input[type="email"],
+textarea {
+  color: #111827; /* gray-900 */
+}
+
+/* Hint text styling */
+.text-xs {
+  color: #9ca3af; /* gray-400 */
+}
